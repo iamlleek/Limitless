@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Limitless</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="company-order.css" />
+	<link rel="stylesheet" href="company-order3.css" />
+	<script src="order.js" async></script>
+</head>
+<body>
+	<header>
+	<nav id="toptop">
+		<img src="photo-import/speedometer.jpg" alt="limitless" />
+	<nav id="bottomtop">
+         <ul>
+            <li><a href="company.html" />home</a></li>
+            <li><a href="#">plasti dip</a></li>
+            <li><a href="#">pearlescent</a></li>
+            <li><a href="#">matte</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="summary">
+      <h1>Vinyl Wrap</h1>
+      <h2>Customer Rating (4,366):<img src="photo-import/co_stars.png" alt="4.5 stars" /></h2>
+       <div><img src="photo-import/wrap-2.webp" alt="" /></div>
+      <p>Use to completely or partially cover a vehicle's original paint with a vinyl wrap of a different color. For assistance with applying this product, feel free to watch this video or bring the manual to your local custom shop.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/wdGHtIym-30?start=198" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+      </section>
+      <section id="orderSection">
+      <form id="orderForm" name="orderForm" method="get" action="company-payment.html">
+        
+        <table id="orderTable">
+           <caption>Product Order</caption>
+           <tr>
+              <td colspan="3">
+                 <input type="text" id="orderDate" name="orderDate" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <label for="wrapc">color</label>
+                 <select name="wrapc" id="wrapc">
+                    <option value="59.95">red ($59.95)</option>
+                    <option value="59.95" selected>blue ($59.95)</option>
+                    <option value="59.95">Green ($59.95)</option>
+                    <option value="59.95">Yellow ($59.95)</option>
+                    <option value="59.95">Orange ($59.95)</option>
+                    <option value="59.95">Pink ($59.95)</option>
+                    <option value="59.95">Purple ($59.95)</option>
+                    <option value="59.95">Black ($59.95)</option>
+                    <option value="59.95">White ($59.95)</option>
+                    <option value="59.95">Grey ($59.95)</option>
+                    <option value="59.95">Brown ($59.95)</option>
+                    <option value="59.95">Teal ($59.95)</option>
+                    <option value="199.99">Galaxy ($199.99)</option>
+                    <option value="250.00">Supreme ($250.00)</option>
+                    <option value="125.95">Chrome ($125.95)</option>
+                    <option value="199.99">Carbon Fiber ($199.99)</option>
+                 </select>   
+                 <input type="hidden" id="modelName" name="modelName" />
+              </td>
+              <td class="rightA">
+                 <label for="qty">Qty</label>
+                 <select name="qty" id="qty">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>   
+              </td>                 
+              <td>
+                 <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td colspan="2"> 
+                 <fieldset>
+                    <legend>Warranty</legend>
+                    <label><input type="radio" id="plan_0" name="Warranty" value="0" checked /> No Warranty</label>
+                    <label><input type="radio" id="plan_1" name="Warranty" value="14.99" /> 6 month- protection plan ($14.99 each)</label>
+                 </fieldset>
+                 <input type="hidden" id="protectionName" name="protectionName" />
+              </td>
+              <td>
+                 <input type="text" name="protectionCost" id="protectionCost" size="10" readonly />
+              </td>
+           </tr>        
+           <tr>
+              <td colspan="2" class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subtotal" id="subtotal" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (3%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+              </td>
+           </tr>
+        </table> 
+        <button class="cart">
+        	<span>Buy Now</span>
+        	<i class="fa fa-shopping-basket" aria-hidden="true"></i> 
+        </button>
+      </form>
+   </section>
+      <footer>
+      <nav id="bottom">
+         <ul>
+         	<h3>Company Info</h3>
+			<li><a href="#">Legal Info</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">About Us</a></li>
+         </ul>
+         <ul>
+         	<h3>Future Updates</h3> 
+            <li><a href="#">Interior</a></li>
+            <li><a href="#">Wheels</a></li>
+            <li><a href="#">Performance</a></li>
+         </ul>
+         <ul>
+         	<h3>Social Media</h3>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+			<li><a href="https://www.instagram.com">Instagram</a></li>
+			<li><a href="https://www.linkedin.com">Linkedin</a></li>
+		</ul>
+		<ul>
+		<h2>available for both Apple and Android</h2>
+		<li><a href="https://www.apple.com/ios/app-store/"><img src="photo-import/app.png" width="185px"/></a></li>
+		<li><a href="https://play.google.com"><img src="photo-import/google.png" width="215px"/></a></li>
+	</ul>
+      </nav>
+   </footer>
+</body>
+</html>

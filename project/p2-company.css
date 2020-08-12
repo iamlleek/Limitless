@@ -1,0 +1,13 @@
+body {
+	background-color: lightslategray;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+h1 {
+	color: white;
+}
+img {
+	width: 150px;
+	height: 150px;
+}

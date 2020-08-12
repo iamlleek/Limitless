@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Limitless</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="company-order.css" />
+	<link rel="stylesheet" href="company-order3.css" />
+	<script src="script.js" async></script>
+</head>
+<body>
+	<header>
+	<nav id="toptop">
+		<img src="photo-import/speedometer.jpg" alt="limitless" />
+	<nav id="bottomtop">
+         <ul>
+            <li><a href="company.html" />home</a></li>
+            <li><a href="#">plasti dip</a></li>
+            <li><a href="#">pearlescent</a></li>
+            <li><a href="#">matte</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="paySection">
+      <h1>Payment Information</h1>
+      
+      <form id="order" name="order">       
+        <table id="orderTable">
+           <caption>Your Order</caption>
+           <tr>
+              <td colspan="3" class="rightA">
+                 <input type="text" id="orderDate" name="orderDate" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <input type="text" name="modelName" id="modelName" readonly  />                                                
+              </td>
+              <td>
+                 <label>Qty: </label>
+                 <input type="text" name="qty" id="qty"  readonly />  
+              </td>                 
+              <td>
+                 <input type="text" name="initialCost" id="initialCost" size="10"  readonly />
+              </td>
+           </tr>
+           <tr>
+              <td colspan="2">
+                 <input type="text" name="protectionName" id="protectionName" readonly />
+              </td>
+              <td>
+                 <input type="text" name="protectionCost" id="protectionCost" size="10" readonly />
+              </td>
+           </tr>        
+           <tr>
+              <td colspan="2" class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subtotal" id="subtotal" size="10" readonly  />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (3%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly  />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="totalCost" id="totalCost" size="10" readonly  />
+              </td>
+           </tr>
+        </table>
+      </form>
+
+    
+      <form id="payment" name="payment" method="post" action="thanks.html">         
+         <fieldset id="creditcard">
+
+        <fieldset id="streetaddress">
+            <legend>Billing Information</legend>
+              <label for="address">Street address</label>
+              <input name="address" id="address" required type="text" />
+
+              <label for="city">City</label>
+              <input name="city" id="city" required type="text" />
+
+              <label for="state">State</label>
+              <input name="state" id="state" required type="text" />
+
+              <label for="zip">Zip</label>
+               <input type="text" id="zip" name="zip" required pattern="^\d{4,5}$" type="text">
+
+                <form id="payment" name="payment" method="post" action="thanks.html">         
+         <fieldset id="creditcard">
+            <legend>Credit Information</legend>
+
+            <label for="cardName">Name*</label>
+            <input name="cardName" id="cardName" required type="text" />              
+
+            <fieldset id="cards">
+               <label class="cardLabel">Credit Card*</label>
+               <label class="cardLabel">
+                  <input name="credit" value="amex" type="radio" required />
+                  <img src="photo-import/co_amex.png" alt="American Express" />
+               </label>
+               <label class="cardLabel">               
+                  <input name="credit" value="discover" type="radio" />
+                  <img src="photo-import/co_discover.png" alt="Discover" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="credit" value="master" type="radio"  />
+                  <img src="photo-import/co_master.png" alt="MasterCard" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="credit" value="visa" type="radio"  />
+                  <img src="photo-import/co_visa.png" alt="Visa" />
+               </label>
+            </fieldset>          
+
+            <label for="cardNumber">Credit Card Number*</label>
+            <input name="cardNumber" id="cardNumber" required type="text"
+                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+
+            <label for="expMonth">Expiration Date*</label>
+            <select id="expMonth" name="expMonth">
+               <option>mm</option>
+               <option value="01">01</option>
+               <option value="02">02</option>
+               <option value="03">03</option>
+               <option value="04">04</option>
+               <option value="05">05</option>
+               <option value="06">06</option>
+               <option value="07">07</option>
+               <option value="08">08</option>
+               <option value="09">09</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+            </select>
+            <span> / </span>
+            <select id="expYear" name="expYear">
+               <option>yy</option>
+               <option value="2020">2020</option>
+               <option value="2021">2021</option>
+               <option value="2022">2022</option>
+               <option value="2023">2023</option>
+               <option value="2024">2024</option>
+               <option value="2025">2025</option>
+            </select>            
+
+            <label for="cvc">CVC*</label>
+            <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+         </fieldset>
+
+         <p id="footnote">* - Required Item</p>        
+         <input type="submit" id="subButton" value="Submit Payment" />         
+      </form>
+
+   </section>
+ <footer>
+      <nav id="bottom">
+         <ul>
+         	<h3>Company Info</h3>
+			<li><a href="#">Legal Info</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">About Us</a></li>
+         </ul>
+         <ul>
+         	<h3>Future Updates</h3> 
+            <li><a href="#">Interior</a></li>
+            <li><a href="#">Wheels</a></li>
+            <li><a href="#">Performance</a></li>
+         </ul>
+         <ul>
+         	<h3>Social Media</h3>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+			<li><a href="https://www.instagram.com">Instagram</a></li>
+			<li><a href="https://www.linkedin.com">Linkedin</a></li>
+		</ul>
+		<ul>
+		<h2>available for both Apple and Android</h2>
+		<li><a href="https://www.apple.com/ios/app-store/"><img src="photo-import/app.png" width="185px"/></a></li>
+		<li><a href="https://play.google.com"><img src="photo-import/google.png" width="215px"/></a></li>
+	</ul>
+      </nav>
+   </footer>
+</body>
+</html>
